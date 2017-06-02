@@ -15,6 +15,8 @@ bot.dialog('/', function (session) {
     
     //respond with user's message
     //this will send you said+what ever user says.
+	
+	console.log("You said " + session.message.text);
     session.send("You said " + session.message.text);
 });
 
